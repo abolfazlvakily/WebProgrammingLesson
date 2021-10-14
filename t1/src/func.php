@@ -51,11 +51,24 @@ function q4($number=null) {
 }
 
 function q5() {
-    return '$q';
+    $number = $_POST["number"];  
+    $revnum = 0;  
+    while ($number > 1)  
+    {  
+        $rem = $number % 10;
+        $revnum = ($revnum * 10) + $rem;  
+        $number = ($number / 10);
+    }
+    return $revnum;
 }
 
 function q6() {
-    return '$q';
+    $r_number = q5();
+    if ($_POST["number"] == $r_number)
+    {
+        return 'معکوس عدد با خود عدد برابر است.';
+    }
+    return 'معکوس عدد با خود عدد برابر نیست.';
 }
 
 function q7() {

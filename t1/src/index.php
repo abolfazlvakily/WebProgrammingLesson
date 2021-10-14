@@ -55,7 +55,7 @@
  </ul>
 </form>
 
-<h3>برنامهاي بنويسيد كه فاكتوريل عدد مورد نظر كاربر را حساب كند.</h3>
+<h3>برنامه اي بنويسيد كه فاكتوريل عدد مورد نظر كاربر را حساب كند.</h3>
 <form action="result.php" method="post">
  <ul>
   <li>
@@ -69,7 +69,7 @@
 </form>
 
 
-<h3>برنامه اي بنويسيد كه چندين عدد اول از دنباله Fibonacci را چاپ كند (با تابع بازگشتي(.</h3>
+<h3>برنامه اي بنويسيد كه چندين عدد اول از دنباله Fibonacci را چاپ كند با تابع بازگشتي.</h3>
 <form action="result.php" method="post">
  <ul>
   <li>
@@ -82,5 +82,30 @@
  </ul>
 </form>
 
+<h3>برنامه اي بنويسيد كه يک عدد دريافت كرده و آن را معکوس كند. بدون استفاده از توابع آماده</h3>
+<form action="result.php" method="post">
+ <ul>
+  <li>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=0>
+  </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q5'>ارسال</button>
+  </li>
+ </ul>
+</form>
+
+<h3>برنامه اي بنويسيد كه بررسي كند آيا معکوس يک عدد مانند 1235321 با خود آن برابر است</h3>
+<form action="result.php" method="post">
+ <ul>
+  <li>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=1235321>
+  </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q6'>ارسال</button>
+  </li>
+ </ul>
+</form>
 </body>
 </html>
