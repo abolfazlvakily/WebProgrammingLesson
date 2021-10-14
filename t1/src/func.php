@@ -124,7 +124,21 @@ function q9() {
 }
 
 function q10() {
-    return '$q';
+    $arr = array("mashhad", "tehran", "tabriz");
+    $tmp = 'قسمت اول سوال: '.implode(" + ",$arr).'\n';
+    $tmp = $tmp.'قسمت دوم سوال: ';
+    rsort($arr);
+    for ($x = 0; $x < count($arr); $x++){
+        $tmp = $tmp.$arr[$x].' + ';
+    }
+    $tmp = $tmp.'\n';
+    $tmp = $tmp.'قسمت سوم سوال: ';
+    array_push($arr, "alborz", "ardebil");
+    foreach ($arr as $value){
+        $tmp = $tmp.$value.' + ';
+    }
+    $tmp = $tmp.'\n';
+    return $tmp;
 }
 
 function answer($q) {
