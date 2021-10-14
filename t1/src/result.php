@@ -1,17 +1,13 @@
-<?php
-$length = $_POST["result-q1"];
-$a = "hi";
-$b = 0;
-?>
-
-
 <html>
 <body>
-<script>
-alert("<?php echo "hi {$length} ss" ?>")
-window.location.href='index.php';
-</script>
-
-
+    <script>
+        <?php
+        include './func.php';
+        $q = $_POST["q"];
+        $result = answer($q);
+        ?>
+        alert('<?php echo "نتیحه: "."{$result}" ?>');
+        window.location.href='index.php';
+    </script>
 </body>
 </html>

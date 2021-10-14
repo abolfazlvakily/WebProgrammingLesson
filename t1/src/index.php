@@ -11,14 +11,14 @@
  <ul>
   <li>
     <label for="length">طول</label>
-    <input type="number" id="length" name="length-var" value=0>
+    <input type="number" id="length" name="length" value=0>
   </li>
   <li>
     <label for="width">عرض</label>
-    <input type="number" id="width" name="width-var" value=0>
+    <input type="number" id="width" name="width" value=0>
   </li>
   <li class="button" style="text-align: left;">
-  <button type="submit" name="result-q1" value=0>ارسال</button>
+  <button type="submit" name="q" value='q0'>ارسال</button>
   </li>
  </ul>
 </form>
@@ -28,41 +28,56 @@
 <form action="result.php" method="post">
  <ul>
   <li>
-    <label for="length">طول</label>
-    <input type="number" id="length" name="length-var" value=0>
+    <label for="height">ارتفاع</label>
+    <input type="number" id="height" name="height" value=0>
   </li>
   <li>
-    <label for="width">عرض</label>
-    <input type="number" id="width" name="width-var" value=0>
+    <label for="base">قاعده</label>
+    <input type="number" id="base" name="base" value=0>
+  </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q1'>ارسال</button>
   </li>
  </ul>
 </form>
 
 
 <h3>برنامهاي بنويسيد زوج يا فرد بودن عدد ورودي را تعيين كند.</h3>
-<form action="/" method="post">
+<form action="result.php" method="post">
  <ul>
   <li>
-    <label for="length">طول</label>
-    <input type="number" id="length" name="length-var" value=0>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=0>
   </li>
-  <li>
-    <label for="width">عرض</label>
-    <input type="number" id="width" name="width-var" value=0>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q2'>ارسال</button>
   </li>
  </ul>
 </form>
 
 <h3>برنامهاي بنويسيد كه فاكتوريل عدد مورد نظر كاربر را حساب كند.</h3>
-<form action="/" method="post">
+<form action="result.php" method="post">
  <ul>
   <li>
-    <label for="length">طول</label>
-    <input type="number" id="length" name="length-var" value=0>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=0>
   </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q3'>ارسال</button>
+  </li>
+ </ul>
+</form>
+
+
+<h3>برنامه اي بنويسيد كه چندين عدد اول از دنباله Fibonacci را چاپ كند (با تابع بازگشتي(.</h3>
+<form action="result.php" method="post">
+ <ul>
   <li>
-    <label for="width">عرض</label>
-    <input type="number" id="width" name="width-var" value=0>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=0>
+  </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q4'>ارسال</button>
   </li>
  </ul>
 </form>
