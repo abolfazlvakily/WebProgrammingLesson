@@ -3,11 +3,16 @@
     <script>
         <?php
         include './func.php';
-        $q = $_POST["q"];
-        $result = answer($q);
+        if(isset($_POST["q"])){
+            $q = $_POST["q"];
+            $result = answer($q);
+        }
+        else{
+            $result = answer('Your request method is not available!');
+        }
         ?>
         alert('<?php echo "نتیجه: "."{$result}" ?>');
-        window.location.href='index.php';
+            window.location.href='index.php';
     </script>
 </body>
 </html>

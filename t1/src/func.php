@@ -177,7 +177,7 @@ function answer($q) {
             return q10();
             break;
         default:
-            return "err";
+            return "درخواست شما معتبر نمی باشد.";
 }
 };
 
