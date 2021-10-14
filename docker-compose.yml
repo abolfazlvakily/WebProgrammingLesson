@@ -2,13 +2,13 @@ version: '3.8'
 services:
   php-apache-environment:
     build:
-      context: ./src
+      context: .
       dockerfile: Dockerfile
     depends_on:
       - db
     container_name: test-project-php-apache
     volumes:
-      - ./src:/var/www/html/
+      - ./t1/src:/var/www/html/
     ports:
       - 8080:80
   db:
