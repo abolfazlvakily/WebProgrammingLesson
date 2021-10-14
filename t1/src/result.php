@@ -6,7 +6,7 @@
         $q = $_POST["q"];
         $result = answer($q);
         ?>
-        alert('<?php echo "نتیحه: "."{$result}" ?>');
+        alert('<?php echo "نتیجه: "."{$result}" ?>');
         window.location.href='index.php';
     </script>
 </body>

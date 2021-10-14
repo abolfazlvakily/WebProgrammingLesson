@@ -107,5 +107,36 @@
   </li>
  </ul>
 </form>
+
+<h3>برنامهاي بنويسيد كه 15 عدد اول را چاپ كند.</h3>
+<form action="result.php" method="post">
+ <ul>
+  <li>
+    <label for="number">عدد</label>
+    <input type="number" id="number" name="number" value=15>
+  </li>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q7'>ارسال</button>
+  </li>
+ </ul>
+</form>
+
+<h3>برنامه اي بنويسيد كه خروجي زير را ايجاد كند.</h3>
+<form action="result.php" method="post">
+ <ul>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q8'>ارسال</button>
+  </li>
+ </ul>
+</form>
+
+<h3>برنامه اي بنويسيد كه خروجي زير را ايجاد كند</h3>
+<form action="result.php" method="post">
+ <ul>
+  <li class="button" style="text-align: left;">
+  <button type="submit" name="q" value='q9'>ارسال</button>
+  </li>
+ </ul>
+</form>
 </body>
 </html>

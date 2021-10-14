@@ -72,15 +72,55 @@ function q6() {
 }
 
 function q7() {
-    return '$q';
+    $count = 0;  
+    $num = 2;
+    $arr = array();
+    while ($count < $_POST["number"] )  
+    {  
+    $div_count=0;  
+    for ( $i=1; $i<=$num; $i++)  
+    {  
+    if (($num%$i)==0)  
+    {  
+    $div_count++;  
+    }  
+    }  
+    if ($div_count<3)  
+    {
+        array_push($arr, $num); 
+        $count=$count+1; 
+    }  
+    $num=$num+1;  
+    }
+    $tmp = implode("-->",$arr);
+    return $tmp;
 }
 
 function q8() {
-    return '$q';
+    $tmp = "";
+    $n = 4;
+    $count = 1;
+    for ($i = $n; $i > 0; $i--)
+    {
+        for ($j = $i; $j < $n + 1; $j++)
+        {
+            $tmp = $tmp.$count;
+            $count++;
+        }
+        $tmp = $tmp.'\n';
+    }
+    return $tmp;
 }
 
 function q9() {
-    return '$q';
+    $tmp = "";
+    for ($i = 1; $i < 6; $i++){
+        for ($j = 1; $j <= $i; $j++){
+            $tmp = $tmp.$j.',';
+        }
+        $tmp = $tmp.'\n';
+    }
+    return $tmp;
 }
 
 function q10() {
